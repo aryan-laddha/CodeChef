@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        int X,Y,Z;
+        int sum =0;
+
+        while(T!=0){
+            X= sc.nextInt();
+            Y = sc.nextInt();
+            Z = sc.nextInt();
+            sum= (X*4)+(Y*2)+(Z*0);
+            System.out.println(sum);
+            T--;
+            sum=0;
+      }
+
+    }
+}
