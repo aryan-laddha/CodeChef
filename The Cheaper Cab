@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	 int T,X,Y;
+
+     Scanner sc = new Scanner(System.in);
+
+     T = sc.nextInt();
+  
+
+     while(T!=0){
+         X = sc.nextInt();
+         Y = sc.nextInt();
+         if(X<Y){
+             System.out.println("FIRST");
+         }else if(Y<X){
+             System.out.println("SECOND");
+         }else if(X==Y){
+             System.out.println("ANY");
+         }
+         T--;
+         X= 0;
+         Y=0;
+
+     }
+
+
+
+    }
+}
