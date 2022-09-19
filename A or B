@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+
+	
+	while(t!=0){
+	    int a= 500;
+	    int b = 1000;
+	    int x,y;
+	    cin>>x>>y;
+	    int p=((a-(x*2))+(b-((x+y)*4))) ;
+	    int q=((b-(y*4))+(a-((y+x)*2)));
+	    if(p>q){
+	        std::cout << p << std::endl;
+    }else if(q>p){
+        cout<<q<<endl;
+    }else if(p==q){
+        cout<<p<<endl;
+    }
+    t--;
+    p=q=0;
+	    
+	}
+	return 0;
+}
