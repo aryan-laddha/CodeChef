@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int t;
+  cin>>t;
+  int n,s;
+  while(t!=0){
+      s=0;
+      cin>>n;
+      s=(n/100)+(n%100);
+      if(s>10){
+          std::cout << "-1" << std::endl;
+      }else{
+        std::cout << s << std::endl;
+     
+  }
+   s=0;
+   t--;
+  }
+	return 0;
+}
