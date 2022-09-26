@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    string s;
+	    cin>>s;
+	    bool find=true;
+	    for(int i=0;i<s.length();i+=2)
+	    {
+	        if(s[i]==s[i+1])
+	        find=false;
+	    }
+	    if(find==false)
+	    cout<<"no"<<endl;
+	    else
+	    cout<<"yes"<<endl;
+	
+	}
+	return 0;
+}
