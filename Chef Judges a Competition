@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t,n;
+    cin>>t;
+    while(t!=0){
+        cin>>n;
+        int a[n],b[n],key_a=0,key_b=0,a_l=0,b_l=0,s_a=0,s_b=0;
+        for (int i = 0; i < n; i++) {
+            std::cin >> a[i];
+        }
+        for (int i = 0; i < n; i++) {
+           if(key_a<a[i]){
+               key_a=a[i];
+               a_l=i;
+           }
+        }
+        a[a_l]=0;
+        for (int i = 0; i < n; i++) {
+            s_a += a[i];
+        } 
+        
+        
+        
+        
+        for (int i = 0; i <n; i++) {
+            cin>>b[i];
+        }
+        for (int i = 0; i < n; i++) {
+           if(key_b<b[i]){
+               key_b=b[i];
+               b_l=i;
+           }
+        }
+        b[b_l]=0;
+        for (int i = 0; i < n; i++) {
+            s_b += b[i];
+        } 
+        
+         if(s_a<s_b){
+	        std::cout << "Alice"<< std::endl;
+	        }else if(s_a>s_b){
+	              std::cout << "Bob"<< std::endl;
+	            }else if(s_a == s_b){
+	            std::cout << "Draw" << std::endl;
+	            }
+        
+        
+                
+        
+        
+        t--;
+    }
+
+    return 0;
+}
