@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,n,k,s=0;
+	cin>>t;
+	
+	while(t!=0){
+	    cin>>n>>k;
+	    int a[n];
+	    for (int i = 0; i < n; i++) {
+	        cin>>a[i];
+	        if(a[i]>k){
+	            s++;
+	        }
+	        
+	    }
+	    std::cout << s << std::endl;
+	    
+	    s=0;
+	    t--;
+	}
+	
+	return 0;
+}
