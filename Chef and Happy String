@@ -1,0 +1,32 @@
+#include <iostream>
+#include<bits/stdc++.h>
+#define ll long long int
+using namespace std;
+
+void solve(){
+    stack<char>s;
+    string str;
+    cin>>str;
+    int cnt=0;
+    for(int i=0;i<str.length();i++){
+        s.push(str[i]);
+        if(s.top()=='a'||s.top()=='e'||s.top()=='i'||s.top()=='o'||s.top()=='u'){
+            cnt++;
+            if(cnt==3){cout<<"HAPPY\n";
+                return;
+            }
+        }
+        else cnt=0;
+    }
+    cout<<"SAD\n";
+}
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    solve();
+	}
+	return 0;
+}
