@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,sum=0;
+	std::cin >> t;
+	while(t!=0){
+	    int n;
+	    std::cin >> n;
+	    int a[n];
+	    while(n!=0){
+	        int a,b;
+	        std::cin >> a;
+	        std::cin >> b;
+	        if(b-a>5){sum+=1;}
+	        n--;
+	        }
+	        std::cout << sum << std::endl;
+	        sum=0;
+	        
+	        t--;
+	       
+	    
+	}
+	return 0;
+}
