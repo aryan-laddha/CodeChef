@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t; 
+	int sum = 0;
+	std::cin >> t;
+	while(t!=0){
+	    int a[5];
+	    for (int i = 0; i < 5; i++) {
+	        std::cin >> a[i];
+	        sum += a[i];
+	    }
+	    if(sum==0){std::cout << "Beginner" << std::endl;}
+	    else if(sum==1){std::cout << "Junior Developer" << std::endl;}
+	    else if(sum==2){std::cout << "Middle Developer" << std::endl;}
+	    else if(sum==3){std::cout << "Senior Developer" << std::endl;}     
+	    else if(sum==4){std::cout << "Hacker" << std::endl;}
+	    else if(sum==5){std::cout << "Jeff Dean" << std::endl;}
+	    
+	    sum=0;
+	    t--;
+	}
+
+	return 0;
+}
